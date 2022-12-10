@@ -28,6 +28,10 @@ Route::get('/blankpage', function () {
     return view('backend.blankpage');
 })->name('blankpage');
 
+Route::get('/frontpage', function () {
+    return view('frontend.indexhtml');
+})->name('frontpage');
+
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

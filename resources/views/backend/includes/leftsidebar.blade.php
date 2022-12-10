@@ -75,6 +75,12 @@
                         <p>Blank Page</p>
                     </a>
                 </li>
+                <li class="nav-item has-treeview">
+                    <a href="{{route('frontpage')}}" class="nav-link">
+                        <i class="nav-icon fas fa-file"></i>
+                        <p>Live Visit</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
