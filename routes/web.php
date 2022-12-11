@@ -23,7 +23,8 @@ Route::get('/dashboard', function () {
 
 Route::get('/admindashboard', function () {
     return view('backend.admindashboard');
-})->name('bdashboard');
+})->middleware('auth')->name('bdashboard');
+
 Route::get('/blankpage', function () {
     return view('backend.blankpage');
 })->name('blankpage');
@@ -31,6 +32,10 @@ Route::get('/blankpage', function () {
 Route::get('/frontpage', function () {
     return view('frontend.indexhtml');
 })->name('frontpage');
+
+Route::get('/frontpageBlank', function () {
+    return view('frontend.blankfrontend');
+})->name('blankfrontend');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

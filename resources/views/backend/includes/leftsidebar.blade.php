@@ -76,9 +76,15 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
-                    <a href="{{route('frontpage')}}" class="nav-link">
+                    <a href="{{route('frontpage')}}" target="_blank" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
                         <p>Live Visit</p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="{{route('blankfrontend')}}" target="_blank" class="nav-link">
+                        <i class="nav-icon fas fa-file"></i>
+                        <p>Frontend Blank</p>
                     </a>
                 </li>
             </ul>
